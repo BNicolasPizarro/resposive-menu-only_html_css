@@ -1,0 +1,96 @@
+*{
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+}
+.responsive-ul{
+    display: none;
+    margin-top: 37px;
+    padding-top: 27px;
+}
+
+.nav-ul{
+    background: darkslateblue;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.nav-li{
+    display: inline-block;
+    color: white;
+    padding: 10px;
+}
+.nav-li:hover > a {
+    color: #ccc;
+}
+.nav-li:hover{
+    color: #ccc;
+}
+.nav-li:hover{
+    background-color: slateblue;
+    box-shadow: 1px ghostwhite;
+    transition: .5s;
+}
+.nav-li i{
+    box-sizing: border-box;
+    text-align: right;
+    margin-right: 5px;
+}
+.nav-responsive-button-container{
+    position: absolute;
+    width: 100%;
+   font-size: 30px;
+   background-color: darkslateblue;
+   color: white;
+   margin-top: -64px;
+   z-index: 100;
+
+}
+.nav-responsive-button{
+    padding: 6px 20px;
+    text-align: right;
+    width: 100%;
+}
+@media screen and (max-width:500px) {
+    .nav-ul{
+        display: none;
+    }
+    .nav{
+        height: 37px;
+        width: 100%;
+    }
+    .responsive-ul{
+        display: block;
+        position: absolute;
+        width: 100%;
+        padding-top: 27px;
+        margin-top: 37px;
+        height: 37px;
+    }
+    .nav_li-container{
+        position: relative;
+        top: -1000px;
+        height:  calc(100vh - 64px);
+        background-color: darkslateblue;
+        transition: all 1s;
+        z-index: 1;
+        width: 75%;
+        padding-top: 27px;
+    }
+      
+    .responsive-li{
+        width: 100%;
+        padding: 9px 20px;
+        color: white;
+    }
+    .responsive-li i{
+        box-sizing: border-box;
+        text-align: center;
+        margin-right: 5px;
+        width: 30px;
+    }
+    .responsive-ul:hover>.nav_li-container{
+        top: -27px;
+    }
+}
